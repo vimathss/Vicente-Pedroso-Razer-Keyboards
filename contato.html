@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teclado - CONTATO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="pic/icone.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <div class="logo"><img src="pic/logo.png"></div>
+        </a>
+        <div class="logotipo"><img src="pic/logotext.png"></div>
+        <div class="icones">
+            <a href="index.html"><i class="bi bi-house"></i></i>Home</a>
+            <a href="sobre.html"><i class="bi bi-info-circle"></i>Sobre</a>
+            <a href="modelo.html"><i class="bi bi-cart"></i>Modelos</a>
+            <a href="contato.html">
+                <div class="iconmark"><i class="bi bi-telephone"></i>Contato</div>
+            </a>
+        </div>
+        <div class="idioma-btn">
+            <a href="contato.html"><img src="pic/brasil.png"></a>
+            <a href="contato_ingles.html"><img src="pic/estados-unidos.png"></a>
+        </div>
+    </header>
+    <script language="javascript" type="text/javascript"> 
+
+        function aviso (){
+            alert('Dados Enviados, entraremos em contato em breve!')
+        }
+    
+         function validar () {
+          var nome = form1.nome.value;
+          var email = form1.email.value;
+          var telefone = form1.telefone.value;
+        
+           if (nome == ""){
+          alert ('Preencha o campo com o seu nome');
+          form1.nome.focus ();
+            return false;
+            }
+    
+            if (email == ""){
+            alert ('Preencha o campo com o seu email');
+            form1.email.focus ();
+            return false;
+            }
+        
+            if (telefone == ""){
+            alert ('Preencha o campo com o seu telefone');
+            form1.telefone.focus ();
+            return false;
+            }
+    
+            // Coloquei vários espaços para alinhar a mensagem de envio! // 
+            else {
+            alert ('Dados enviados com sucesso.                                                                Entraremos em contato em breve!')
+            }
+            }
+        </script>
+    
+    
+
+    <div class="container-contato">
+        <form name="form1" method="post" action="index.html">
+            <h1>NOS CONTATE</h1>
+            <div class="input">
+                <h2>Nome</h2>
+                <input name="nome" type="text" placeholder="Digite seu nome completo" minlength="2" required maxlength="25">
+                <h2>Email</h2>
+                <input name="email" type="email" placeholder="Digite seu email" required>
+                <h2>Telefone</h2>
+                <input name="telefone" type="tel" placeholder="Digite o seu telefone" title="Digite apenas números" required>
+                <h2>Comentário</h2>
+                <div class="textarea">
+                    <textarea name="comentario" placeholder="Deixe seu comentário..." type="text"></textarea>
+                </div>
+                
+                <div class="redes-sociais">
+                   <a href="https://twitter.com/vic3ntemcp"><i class="bi bi-twitter"></i></a>
+                   <a href="https://www.instagram.com/vimathss/"><i class="bi bi-instagram"></i></a>
+                   <a href="https://api.whatsapp.com/send?phone=5555994799577&text=oi%20gostoso%20do%20css%20bolado%20%F0%9F%98%8F"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+                <div class="enviar">
+                    <button type="submit" onclick="return validar()">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="wave"><img src="pic/wave1.png"></div>
+    <footer>Vicente Pedroso 2023 &copyTodos os direitos reservados</br>
+        Trabalho acadêmico - Sem fins lucrativos
+        <!-- FOOTER -->
+        <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+    </footer>
+</body>
+
+</html>

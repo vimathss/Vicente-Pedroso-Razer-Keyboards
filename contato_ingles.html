@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keyboard - CONTACT US</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="pic/icone.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="home_ingles.html">
+            <div class="logo"><img src="pic/logo.png"></div>
+        </a>
+        <div class="logotipo"><img src="pic/logotext.png"></div>
+        <div class="icones">
+            <a href="home_ingles.html"><i class="bi bi-house"></i></i>Home</a>
+            <a href="sobre_ingles.html"><i class="bi bi-info-circle"></i>About</a>
+            <a href="modelo_ingles.html"><i class="bi bi-cart"></i>Models</a>
+            <a href="contato_ingles.html">
+                <div class="iconmark"><i class="bi bi-telephone"></i>Contact</div>
+            </a>
+        </div>
+        <div class="idioma-btn">
+            <a href="contato.html"><img src="pic/brasil.png"></a>
+            <a href="contato_ingles.html"><img src="pic/estados-unidos.png"></a>
+        </div>
+    </header>
+    <script language="javascript" type="text/javascript"> 
+
+        function aviso (){
+            alert('Data sent, we will get in touch soon!')
+        }
+    
+         function validar () {
+          var nome = form1.nome.value;
+          var email = form1.email.value;
+          var telefone = form1.telefone.value;
+        
+           if (nome == ""){
+          alert ('Fill in the field with your name');
+          form1.nome.focus ();
+            return false;
+            }
+    
+            if (email == ""){
+            alert ('Fill in the field with your email');
+            form1.email.focus ();
+            return false;
+            }
+        
+            if (telefone == ""){
+            alert ('Fill in the field with your telephone');
+            form1.telefone.focus ();
+            return false;
+            }
+    
+            // Coloquei vários espaços para alinhar a mensagem de envio! // 
+            else {
+            alert ('Data sent successfully. We will contact you shortly')
+            }
+            }
+        </script>
+    
+    
+
+    <div class="container-contato">
+        <form name="form1" method="get" action="home_ingles.html">
+            <h1>CONTACT US</h1>
+            <div class="input">
+                <h2>Name</h2>
+                <input name="nome" type="text" placeholder="Enter your name">
+                <h2>Email</h2>
+                <input name="email" type="text" placeholder="Enter your email">
+                <h2>Telephone</h2>
+                <input name="telefone" type="tel" placeholder="Enter your telephone">
+                <h2>Comment</h2>
+                <div class="textarea">
+                    <textarea name="comentario" placeholder="Enter your comment..." type="text"></textarea>
+                </div>
+                
+                <div class="redes-sociais">
+                   <a href="https://twitter.com/vic3ntemcp"><i class="bi bi-twitter"></i></a>
+                   <a href="https://www.instagram.com/vimathss/"><i class="bi bi-instagram"></i></a>
+                   <a href="https://api.whatsapp.com/send?phone=5555994799577&text=oi%20gostoso%20do%20css%20bolado%20%F0%9F%98%8F"><i class="bi bi-whatsapp"></i></a>
+                </div>
+
+                <div class="enviar">
+                    <button type="submit" onclick="return validar()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="wave"><img src="pic/wave1.png"></div>
+    <footer>Vicente Pedroso 2023 &copyAll rights reserved </br>
+        Academic Work - Nonprofit
+        <!-- FOOTER -->
+        <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+    </footer>
+</body>
+
+</html>
